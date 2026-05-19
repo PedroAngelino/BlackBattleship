@@ -24,23 +24,25 @@ public class MainPageTest {
     @BeforeEach
     public void setUp() {
         open("https://www.jetbrains.com/");
+        mainPage.acceptCookies();
+
     }
 
     @Test
     public void search() {
         mainPage.searchButton.click();
 
-        $("[data-test='search-input']").sendKeys("Selenium");
-        $("button[data-test='full-search-button']").click();
+        $("[data-test-id='search-input']").sendKeys("Selenium");
+        $("button[data-test-id='full-search-button']").click();
 
-        $("input[data-test='search-input']").shouldHave(attribute("value", "Selenium"));
+        $("input[data-test-id='search-input']").shouldHave(attribute("value", "Selenium"));
     }
 
     @Test
     public void toolsMenu() {
         mainPage.toolsMenu.click();
 
-        $("div[data-test='main-submenu']").shouldBe(visible);
+        $("div[data-test-id='main-submenu']").shouldBe(visible);
     }
 
     @Test
