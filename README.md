@@ -79,9 +79,9 @@ User stories do jogo Battleship em [papergames.io](https://papergames.io/en/batt
 
 ### Épico 7 — Navegação e Recursos
 
-**US25** — Como visitante, quero aceder a outros jogos do site (Tic Tac Toe, Connect 4, Gomoku, Chess, Checkers) a partir do menu de jogos.
+**US25** — Como visitante, quero navegar para outro jogo da plataforma (Tic Tac Toe) a partir do menu lateral, sem ter de voltar à página inicial.
 
-**US26** — Como visitante, quero consultar as regras do jogo e estratégias na própria página do Battleship.
+**US26** — Como jogador, quero desativar o som do jogo nas definições para jogar em ambientes silenciosos.
 
 **US27** — Como visitante, quero descarregar a aplicação móvel a partir das ligações para a Google Play Store e App Store.
 
@@ -94,6 +94,6 @@ User stories do jogo Battleship em [papergames.io](https://papergames.io/en/batt
 | Pedro Angelino (99371)                | _a definir_                  |
 | Gonçalo Nunes (100678)                | _a definir_                  |
 | Martim dos Reis                       | _a definir_                  |
-| Vicente Viela (111519)                | _a definir_                  |
+| Vicente Viela (111519)                | US01, US05, US25, US26                  |
 
 Cada membro do grupo é responsável por implementar testes de aceitação para pelo menos **4 user stories distintas**, seguindo o padrão de desenho **Page Object Model (POM)**.

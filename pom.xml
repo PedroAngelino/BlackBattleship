@@ -17,15 +17,26 @@
         <aspectj.version>1.9.22.1</aspectj.version>
         <allure.version>2.29.0</allure.version>
         <selenide.version>7.6.0</selenide.version>
+        <selenium.version>4.26.0</selenium.version>
     </properties>
 
     <dependencies>
+        <!-- Selenium WebDriver puro (usado na Parte 1 da ficha) -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+
+        <!-- Selenide (usado na Parte 2 da ficha) -->
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
             <version>${selenide.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- JUnit 5 -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -38,6 +49,8 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- Allure Report -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-junit5</artifactId>
@@ -50,12 +63,16 @@
             <version>${allure.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- AspectJ Weaver (necessário para o Allure) -->
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
             <version>${aspectj.version}</version>
             <scope>provided</scope>
         </dependency>
+
+        <!-- Logger -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>

@@ -37,3 +37,12 @@ build/
 
 ### Mac OS ###
 .DS_Store
+# IntelliJ files (não devem ir para o repo)
+.idea/
+*.iml
+
+# Allure results (gerados em runtime)
+allure-results/
+
+# Maven build output
+target/
